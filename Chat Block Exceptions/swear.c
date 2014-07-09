@@ -117,7 +117,7 @@ int swearing(int cn,char *text)
 		}
 	}
 	
-if (!(strcasestr(text,"improve") && areaID==3 && ((ch[cn].x>=125 && ch[cn].x<=134 && ch[cn].y>=210 && ch[cn].y<=237) || (ch[cn].x>=119 && ch[cn].x<=124 && ch[cn].y>=218 && ch[cn].y<=237) || (ch[cn].x>=111 && ch[cn].x<=118 && ch[cn].y>=218 && ch[cn].y<=226))) && !((strcasestr(text,"increase") || strcasestr(text,"decrease")) && areaID==32) && !((areaID==23 || areaID==23) && (ch[cn].x>=31 || ch[cn].y>=31)) && !((strcasestr(text,"raise") || strcasestr(text,"lower")) && areaID==3  && (ch[cn].x>=138 && ch[cn].x<=144 && ch[cn].y>=214 && ch[cn].y<=220))) {
+	if (!(strcasestr(text,"improve") && areaID==3 && ((ch[cn].x>=125 && ch[cn].x<=134 && ch[cn].y>=210 && ch[cn].y<=237) || (ch[cn].x>=119 && ch[cn].x<=124 && ch[cn].y>=218 && ch[cn].y<=237) || (ch[cn].x>=111 && ch[cn].x<=118 && ch[cn].y>=218 && ch[cn].y<=226))) && !((strcasestr(text,"increase") || strcasestr(text,"decrease")) && areaID==32) && !((areaID==23 || areaID==23) && (ch[cn].x>=31 || ch[cn].y>=31)) && !((strcasestr(text,"raise") || strcasestr(text,"lower")) && areaID==3  && (ch[cn].x>=138 && ch[cn].x<=144 && ch[cn].y>=214 && ch[cn].y<=220))) {
 	
 		if (realtime-ppd->lasttalk[1]<1) {	// 0.3s per line
 			log_char(cn,LOG_SYSTEM,0,"°c3Chat has been blocked for 30 seconds for excessive usage (1).");
